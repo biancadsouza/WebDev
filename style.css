@@ -1,0 +1,122 @@
+body{
+    background-color:cadetblue;
+    font-family: 'Indie Flower', cursive;
+}
+
+.brdr{
+    
+}
+
+header{
+    padding:10px 0;
+    clear:both;
+    text-align:center;
+}
+
+.wrapper{
+    margin:0px auto;
+    max-width:100%;
+}
+
+img{
+    max-width:100%;
+}
+
+nav{
+    text-align:center;
+    padding:10px 0;
+    margin:10px 0 0 0;
+}
+
+nav ul{
+    list-style-type:none;
+    padding:0px;
+    margin:0px 10px;
+}
+
+nav li{
+    display:inline-block;
+}
+
+nav a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    background-color:white;
+    color:black;
+}
+
+nav a:hover{
+    background-color:black;
+    color:white;
+}
+
+#main{
+    width:100%;
+    
+}
+
+#first{
+    background-color:lightgray;
+    padding:5px;
+}
+
+#second{
+    background-color:mintcream;
+    padding:5px;
+}
+
+footer{
+    clear:both;
+    padding:35px 0 0 0;
+    text-align:center;
+    background-color:black;
+    color:darkgrey;
+}
+
+/*responsive web design using media queries*/
+
+/*Really large like desktop*/
+@media screen and (min-width:1200px) { /*as long as screen width is 1200 and above = page width is 1100px. If screen width goes below 1200 px then the page width is 100% of available width. and at below 800px width, bg color also changes to blue.*/
+    .wrapper{
+    max-width:1100px;
+    }
+    
+    nav{
+        float:left;
+        width:20%;
+    }
+    
+    #main{
+        float:right;
+        width:79%;
+    }
+    
+    nav li{
+        display:block;
+        padding:10px 0px;
+        width:90%;
+    }  
+    
+}
+
+/*Tablet*/
+@media screen and (min-width:800px) {
+    body{
+        background-color:red;
+    }
+    
+}
+
+/*for really small phones like iphone etc.*/
+@media screen and (min-width:480px) {
+    #first{
+        width:47%;
+        float:left;
+    }
+    #second{
+        width:47%;
+        float:right;
+    }
+    
+}
